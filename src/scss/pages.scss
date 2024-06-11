@@ -35,6 +35,18 @@
       }
     }
 
+  //   .profile {
+  //     img {
+  //         width: 100%; // Adjust width as needed
+  //         margin-bottom: 10px; // Adjust the value as needed to create the desired space
+  //     }
+  //     text-align: center;
+  //     .name {
+  //         margin-top: 10px; // Adjust the value as needed to create the desired space
+  //         text-align: center;
+  //     }
+  // }
+
     .top-half {
       // clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4rem), 0 100%);
       border-top-left-radius: 2rem;
@@ -227,6 +239,7 @@
       position: relative;
       font-size: 30px;
       width: 18rem;
+      // text-align: center;
       text-align: justify;
     }
     .caption {
@@ -324,7 +337,7 @@
     }
     .name {
       position: relative;
-      font-size: 25px;
+      font-size: 205px;
       width: 18rem;
       text-align: justify;
     }

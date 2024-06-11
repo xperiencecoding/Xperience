@@ -9,6 +9,8 @@
     font-family: "Oxanium", sans-serif;
 }
 
+
+
 .expletus {
     font-family: "Expletus Sans", sans-serif;
 }
@@ -40,6 +42,30 @@ h1, .h1 {
         font-size: 400%;
     }
 }
+
+.profile {
+    text-align: center;
+
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: 1.9em;
+        
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+
+            a {
+                margin: 0 5px; // Adjust spacing between icons if needed
+            }
+        }
+    }
+}
+
 
 h2, .h2 {
     @media (max-width: 639px) {
