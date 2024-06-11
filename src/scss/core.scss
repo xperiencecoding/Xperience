@@ -9,8 +9,39 @@
     font-family: "Oxanium", sans-serif;
 }
 
+// modificationsssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
+.profile {
+    position: relative;
+    img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .name {
+        margin-top: 10px;
+    }
+    .icons {
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    &:hover {
+        img {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+    }
+}
 
 
+
+
+
+
+
+// modificationsssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 .expletus {
     font-family: "Expletus Sans", sans-serif;
 }
