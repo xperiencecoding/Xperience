@@ -95,7 +95,7 @@ function Team(props: {}) {
                             </div>
                             <div key="b">
                                 <div className="profile">
-                                    <img src={require("../../img/Rohit.png")} />
+                                    <img src={require("../../img/Rohit2.png")} />
                                     <figcaption className="name oxanium bold">
                                         Rohit Dashaputra
                                         <div className="icons">
@@ -112,7 +112,7 @@ function Team(props: {}) {
                             </div>
                             <div key="c">
                                 <div className="profile">
-                                    <img src={require("../../img/Om Image.png")} />
+                                    <img src={require("../../img/Om_Image2.png")} />
                                     <figcaption className="name oxanium bold">
                                         Om Kotwal
                                         <div className="icons">
@@ -129,7 +129,7 @@ function Team(props: {}) {
                             </div>
                             <div key="d">
                                 <div className="profile">
-                                    <img src={require("../../img/Juno.jpeg")} />
+                                    <img src={require("../../img/Juno2.png")} />
                                     <figcaption className="name oxanium bold">
                                         Juno Lee
                                         <div className="icons">
@@ -287,7 +287,7 @@ function Team(props: {}) {
                             </div>
                             <div key="h">
                                 <div className="profile">
-                                    <img src={require("../../img/kartik.jpg")} />
+                                    <img src={require("../../img/Kartik2.png")} />
                                     <figcaption className="name oxanium bold">
                                         Kartik Vasudeva
                                         <div className="icons">
@@ -324,7 +324,7 @@ function Team(props: {}) {
                             </div>
                             <div key="j">
                                 <div className="profile">
-                                    <img src={require("../../img/Sashank Image.JPG")} />
+                                    <img src={require("../../img/Sashank2.png")} />
                                     <figcaption className="name oxanium bold">
                                         Sashank Kurra
                                         <div className="icons">
