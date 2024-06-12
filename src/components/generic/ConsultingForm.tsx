@@ -56,17 +56,36 @@ function ConsultingForm() {
     const [checked, setChecked] = useState(false)
 
     function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault(); // Prevent the default form submission
+    
+        // Extract the form data
+
+        const form = e.currentTarget;
+        const formData = new FormData(e.currentTarget);
+    
+        // Prepare the template parameters
+        const templateParams = {
+            name: formData.get('name') || '', // Fallback to empty string if null
+            email: formData.get('email') || '',
+            company: formData.get('companyname') || '',
+            sponsor: (form.querySelector('input[name="sponsor"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            intern: (form.querySelector('input[name="interns"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            IT: (form.querySelector('input[name="IT"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            other: formData.get('other') || ''
+        };
+    
         emailjs
-            .sendForm("service_1hcw2wb", "template_ge3cinu", e.currentTarget, "7oQ_KOhAcQCiNH2WD")
+            .send("service_sbcmhmr", "template_3aj0ied", templateParams, "76imFaTEAYXwAt6pw")
             .then(
                 (result) => {
                     console.log(result.text);
                 },
                 (error) => {
-                    
+                    console.log(error.text);
                 }
             );
-        e.currentTarget.reset()
+    
+        e.currentTarget.reset(); // Reset the form after submission
     }
 
 
