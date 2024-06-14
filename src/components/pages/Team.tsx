@@ -377,7 +377,7 @@ function Team(props: {}) {
 
                             <div key="g">
                                 <div className="profile">
-                                    <img src={require("../../img/Abraham.png")} />
+                                    <img src={require("../../img/abe.jpg")} />
                                     <figcaption className="name oxanium bold">
                                         Abraham Guo
                                         <div className="icons">
