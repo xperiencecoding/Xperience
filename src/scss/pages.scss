@@ -93,7 +93,6 @@
 .apex-consulting {
   color: white;
   min-height: 100vh;
-
   padding: 8rem 0 2rem;
 
   .document {
@@ -112,13 +111,13 @@
     .text {
       padding: 2rem;
     }
+
     .h0 {
       letter-spacing: 1px;
       margin: 0;
       text-shadow: 0 0.25rem 0.5rem black;
       cursor: pointer;
       background-color: rgba(255, 255, 255, 0.08);
-
       padding: 2rem;
 
       .back {
@@ -141,8 +140,10 @@
     }
 
     iframe {
-      width: 35%;
+      width: 100%; /* Adjusted for responsiveness */
       aspect-ratio: 3/2;
+      border: none; /* Ensure no border */
+      margin-top: 1rem; /* Added margin top for spacing */
     }
 
     .click-to {
@@ -154,16 +155,42 @@
     }
 
     img {
-      width: 18rem;
-      height: 18rem;
+      width: 100%; /* Adjusted for responsiveness */
+      max-width: 18rem; /* Added max-width to limit size on larger screens */
+      height: auto; /* Maintain aspect ratio */
       border-radius: 2rem;
+      margin-top: 1rem; /* Added margin top for spacing */
     }
 
     .swiper-button-prev {
       background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
     }
   }
+
+  @media (max-width: 768px) {
+    .document {
+      padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .h0 {
+      font-size: 2rem; /* Decrease font size on smaller screens */
+    }
+
+    .list {
+      flex-direction: column; /* Stack list items vertically on smaller screens */
+    }
+
+    iframe {
+      width: 100%; /* Make iframe full width on smaller screens */
+    }
+
+    img {
+      width: 100%; /* Make images full width on smaller screens */
+      max-width: none; /* Remove max-width constraint */
+    }
+  }
 }
+
 
 .apex-users {
   color: white;
@@ -189,7 +216,7 @@
       margin: 0;
       text-shadow: 0 0.25rem 0.5rem black;
       cursor: pointer;
-      background-color: rgba(255, 255, 255, 0.08);
+      background-color: rgba(255, 255, 55, 0.08);
 
       padding: 2rem;
 
@@ -225,13 +252,14 @@
       border-bottom-right-radius: 1rem;
     }
     .profile {
-      width: 1rem;
-      height: 1rem;
+      text-align: center;
+      width: 18rem; /* Adjust as needed */
+      margin: 0 auto; /* Horizontally center the profile */
       border-radius: 50%;
     }
     img {
-      width: 18rem;
-      height: 18rem;
+      width: 13rem; /* Team Pics size */
+      height: 13rem;
       object-fit: cover;
       border-radius: 50%;
     }
@@ -239,14 +267,17 @@
       position: relative;
       font-size: 30px;
       width: 18rem;
-      // text-align: center;
-      text-align: justify;
+      /* text-align: justify;  */
     }
     .caption {
       position: relative;
       width: 18rem;
       font-size: 15px;
-      text-align: justify;
+      /* text-align: justify; */
+    }
+    .user-info {  /* New container element */
+      display: flex;
+      align-items: center;
     }
     a {
       color: white;
@@ -257,13 +288,9 @@
       text-decoration: none;
       cursor: pointer;
     }
-
-    // img:hover {
-    //     opacity: 0;
-    //     transition:opacity .2s;
-    //   }
   }
 }
+
 
 .apex-test {
   color: white;
@@ -326,6 +353,7 @@
       border-bottom-right-radius: 1rem;
     }
     .profile {
+      text-align: center;
       width: 1rem;
       height: 1rem;
       border-radius: 50%;
@@ -342,6 +370,7 @@
       text-align: justify;
     }
     .caption {
+      
       position: relative;
       width: 18rem;
       text-align: justify;
