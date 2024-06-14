@@ -2,7 +2,7 @@
   "name": "xperience",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xperiencecoding.github.io/",
+  "homepage": ".",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@emotion/react": "^11.10.4",
