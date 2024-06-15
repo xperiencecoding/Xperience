@@ -173,7 +173,7 @@ function Team(props: {}) {
                             layouts={layouts}
                             breakpoints={breakpoints}
                             cols={cols}
-                            rowHeight={450}
+                            rowHeight={350}
                             containerPadding={[40, -10]}
                             margin={[50, 5]}
                             style={{ marginLeft: -35 }}
@@ -187,10 +187,10 @@ function Team(props: {}) {
                                         Adam Lueken 
                                         <div className="icons">
                                             <a href="mailto:adam.lueken@d128.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/adam-lueken-37455a8/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -205,10 +205,10 @@ function Team(props: {}) {
                                         Siddharth Avula
                                         <div className="icons">
                                             <a href="mailto:siddharth.avula@d128.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="www.linkedin.com/in/siddharth-avula-8b904a291" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -223,10 +223,10 @@ function Team(props: {}) {
                                         Kartik Vasudeva
                                         <div className="icons">
                                             <a href="mailto:kartik.vasudeva@d128.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -241,10 +241,10 @@ function Team(props: {}) {
                                         Shayna Weinstein
                                         <div className="icons">
                                             <a href="mailto:shayshayro1@gmail.com" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/shayna-weinstein/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -276,10 +276,10 @@ function Team(props: {}) {
                                         Connor Albrecht
                                         <div className="icons">
                                             <a href="mailto:connor.albrecht@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/connor-albrecht-aa583a30b" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -294,10 +294,10 @@ function Team(props: {}) {
                                         Rohit Dashaputra
                                         <div className="icons">
                                             <a href="mailto:rohit.dashaputra@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/rohit-dashaputra-9646312a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -312,10 +312,10 @@ function Team(props: {}) {
                                         Om Kotwal
                                         <div className="icons">
                                             <a href="mailto:om.kotwal@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/omkotwal/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -331,7 +331,7 @@ function Team(props: {}) {
                                         <div className="icons">
                                             
                                             <a href="mailto:juno.lee@vhhscougars.org"target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -346,10 +346,10 @@ function Team(props: {}) {
                                     Zoe Mehta
                                         <div className="icons">
                                             <a href="mailto:Arnav.gupta@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/zoe-mehta-0a9040289/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -364,10 +364,10 @@ function Team(props: {}) {
                                          Sai Soleti
                                         <div className="icons">
                                             <a href="mailto:sai.soleti@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/sai-soleti-942525293/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -382,10 +382,10 @@ function Team(props: {}) {
                                         Abraham Guo
                                         <div className="icons">
                                             <a href="mailto:abraham.guo@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/abraham-guo-9a6551309/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -401,10 +401,10 @@ function Team(props: {}) {
                                         <div className="icons">
                                             
                                             <a href="mailto:mohit.kumar@vhhscougars.org"target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/mohith-s-98894a309/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -419,10 +419,10 @@ function Team(props: {}) {
                                         Aishi Agarwal
                                         <div className="icons">
                                             <a href="mailto:aishi.agarwal@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/abraham-guo-9a6551309/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -437,10 +437,10 @@ function Team(props: {}) {
                                     Pritika Barman
                                         <div className="icons">
                                             <a href="mailto:pritika.barman@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/pritika-barman-7890b2110/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -455,10 +455,10 @@ function Team(props: {}) {
                                     Stephen Posner
                                         <div className="icons">
                                             <a href="mailto:stephen.posner@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/stephen-posner-679b2030a" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -473,10 +473,10 @@ function Team(props: {}) {
                                     Arnav Gupta
                                         <div className="icons">
                                             <a href="mailto:Arnav.gupta@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/arnavguptavh/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -491,10 +491,10 @@ function Team(props: {}) {
                                     Riley Mitchell
                                         <div className="icons">
                                             <a href="mailto:riley.mitchell@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/iamrileymitchell/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -509,10 +509,10 @@ function Team(props: {}) {
                                     Sashank Muppaneni
                                         <div className="icons">
                                             <a href="mailto:sashank.muppaneni@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={"0.55em"} />
+                                                <FaEnvelope size={"0.7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/sashank-muppaneni-5926b422b" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -549,10 +549,10 @@ function Team(props: {}) {
                                         Tymur Arsentiev
                                         <div className="icons">
                                             <a href="mailto:tymur.arsentiev.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/tymurarsent/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -566,13 +566,13 @@ function Team(props: {}) {
                                         Rahil Sheth
                                         <div className="icons">
                                             <a href="https://github.com/rahilsheth" target="_blank" rel="noopener noreferrer">
-                                                <FaGithub size={".55em"} />
+                                                <FaGithub size={".7em"} />
                                             </a>
                                             <a href="mailto:rahilsheth3@gmail.com" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/rahil-sheth-272583248/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -586,10 +586,10 @@ function Team(props: {}) {
                                         Kevin Ye
                                         <div className="icons">
                                             <a href="mailto:kevin.ye@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/kye6/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -603,10 +603,10 @@ function Team(props: {}) {
                                         Rudra Kukian
                                         <div className="icons">
                                             <a href="mailto:rudra.kukian@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/rudra-kukian-299904278/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -620,10 +620,10 @@ function Team(props: {}) {
                                         Tanish Sharma
                                         <div className="icons">
                                             <a href="mailto:tanish.sharma@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/tanish-sharma-43845523a/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -637,13 +637,13 @@ function Team(props: {}) {
                                         Dmitriy Shor
                                         <div className="icons">
                                             <a href="https://github.com/DmitriyShor23" target="_blank" rel="noopener noreferrer">
-                                                <FaGithub size={".55em"} />
+                                                <FaGithub size={".7em"} />
                                             </a>
                                             <a href="mailto:dmitriy.shor@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/dmitriy-shor-3539b1262/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -657,13 +657,13 @@ function Team(props: {}) {
                                         Jae Park
                                         <div className="icons">
                                             <a href="https://github.com/jaepark23" target="_blank" rel="noopener noreferrer">
-                                                <FaGithub size={".55em"} />
+                                                <FaGithub size={".7em"} />
                                             </a>
                                             <a href="mailto:jae.park@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/jae-park-9a1209266/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -677,10 +677,10 @@ function Team(props: {}) {
                                         Bisti Potdar       
                                         <div className="icons">
                                             <a href="mailto:bisti.potdar@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/bisti-potdar-0a0aa8244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -694,10 +694,10 @@ function Team(props: {}) {
                                         Sam Shlau
                                         <div className="icons">
                                             <a href="mailto:sam.shlau@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/samuel-shlau2005/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -711,10 +711,10 @@ function Team(props: {}) {
                                         Sashank Kurra
                                         <div className="icons">
                                             <a href="mailto:Sashank.Kurra@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/sashank-kurra-243bb7260/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -730,10 +730,10 @@ function Team(props: {}) {
                                     
                                         <div className="icons">
                                             <a href="mailto:aaryan.singh@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/aaryans4699/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -750,10 +750,10 @@ function Team(props: {}) {
                                     
                                         <div className="icons">
                                             <a href="mailto:aaryan.singh@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/aaryans4699/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -770,10 +770,10 @@ function Team(props: {}) {
                                     
                                         <div className="icons">
                                             <a href="mailto:aaryan.singh@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/aaryans4699/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
@@ -790,10 +790,10 @@ function Team(props: {}) {
                                     
                                         <div className="icons">
                                             <a href="mailto:aaryan.singh@vhhscougars.org" target="_blank" rel="noopener noreferrer">
-                                                <FaEnvelope size={".55em"} />
+                                                <FaEnvelope size={".7em"} />
                                             </a>
                                             <a href="https://www.linkedin.com/in/aaryans4699/" target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedinIn size={".55em"} />
+                                                <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
                                     </figcaption>
