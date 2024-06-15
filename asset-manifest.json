@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.d1ab129c.js",
+    "main.js": "/static/js/main.6671b1d3.js",
     "static/css/682.62c00561.chunk.css": "/static/css/682.62c00561.chunk.css",
     "static/js/682.c327b9d0.chunk.js": "/static/js/682.c327b9d0.chunk.js",
     "static/css/858.dc90d590.chunk.css": "/static/css/858.dc90d590.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/569.9de5ecd3.chunk.css": "/static/css/569.9de5ecd3.chunk.css",
     "static/js/569.ee9672e5.chunk.js": "/static/js/569.ee9672e5.chunk.js",
     "static/css/470.ccdcbad3.chunk.css": "/static/css/470.ccdcbad3.chunk.css",
-    "static/js/470.34a3ed43.chunk.js": "/static/js/470.34a3ed43.chunk.js",
+    "static/js/470.661cbd9a.chunk.js": "/static/js/470.661cbd9a.chunk.js",
     "static/css/915.62c00561.chunk.css": "/static/css/915.62c00561.chunk.css",
     "static/js/915.ee9feb84.chunk.js": "/static/js/915.ee9feb84.chunk.js",
     "static/js/787.7e210236.chunk.js": "/static/js/787.7e210236.chunk.js",
@@ -30,7 +30,6 @@
     "static/media/Baxter Credit Union.png": "/static/media/Baxter Credit Union.c31f13e202a4359edb16.png",
     "static/media/code3.jpg": "/static/media/code3.677e9c69d303d04c3d8f.jpg",
     "static/media/code4.jpg": "/static/media/code4.255f298a5efe444e0bf6.jpg",
-    "static/media/abe.jpg": "/static/media/abe.6e60fd79b4faf3ca5d41.jpg",
     "static/media/code7.jpg": "/static/media/code7.00248d34537fe7d2d51f.jpg",
     "static/media/Kartik2.png": "/static/media/Kartik2.77d85a1cbeecd38c1bcc.png",
     "static/media/jae.PNG": "/static/media/jae.5f0cae5aae0adb9ca12c.PNG",
@@ -59,6 +58,7 @@
     "static/media/kevin.jpg": "/static/media/kevin.1c81629a537b52cffdad.jpg",
     "static/media/Rohit2.png": "/static/media/Rohit2.868cc782638c715408f3.png",
     "static/media/Pritika.jpeg": "/static/media/Pritika.1946db4d4a76f3cae81d.jpeg",
+    "static/media/Abraham1.jpg": "/static/media/Abraham1.513cfb3e3e349a14eb6b.jpg",
     "static/media/Stephen.jpeg": "/static/media/Stephen.9e272fcbc5a8d23b171f.jpeg",
     "static/media/team.webp": "/static/media/team.4ebd351ea5baddeeb15b.webp",
     "static/media/Academic Resource Center.png": "/static/media/Academic Resource Center.358f6ac35f7a6fef45fd.png",
@@ -121,7 +121,7 @@
     "static/media/expletus-sans-latin-ext-400-normal.woff2": "/static/media/expletus-sans-latin-ext-400-normal.8c549910e4862ca7fe24.woff2",
     "static/media/expletus-sans-latin-ext-700-normal.woff2": "/static/media/expletus-sans-latin-ext-700-normal.4906b4c90f4bc6c4943c.woff2",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.d1ab129c.js.map": "/static/js/main.d1ab129c.js.map",
+    "main.6671b1d3.js.map": "/static/js/main.6671b1d3.js.map",
     "682.62c00561.chunk.css.map": "/static/css/682.62c00561.chunk.css.map",
     "682.c327b9d0.chunk.js.map": "/static/js/682.c327b9d0.chunk.js.map",
     "858.dc90d590.chunk.css.map": "/static/css/858.dc90d590.chunk.css.map",
@@ -133,7 +133,7 @@
     "569.9de5ecd3.chunk.css.map": "/static/css/569.9de5ecd3.chunk.css.map",
     "569.ee9672e5.chunk.js.map": "/static/js/569.ee9672e5.chunk.js.map",
     "470.ccdcbad3.chunk.css.map": "/static/css/470.ccdcbad3.chunk.css.map",
-    "470.34a3ed43.chunk.js.map": "/static/js/470.34a3ed43.chunk.js.map",
+    "470.661cbd9a.chunk.js.map": "/static/js/470.661cbd9a.chunk.js.map",
     "915.62c00561.chunk.css.map": "/static/css/915.62c00561.chunk.css.map",
     "915.ee9feb84.chunk.js.map": "/static/js/915.ee9feb84.chunk.js.map",
     "787.7e210236.chunk.js.map": "/static/js/787.7e210236.chunk.js.map",
@@ -145,6 +145,6 @@
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d1ab129c.js"
+    "static/js/main.6671b1d3.js"
   ]
 }
