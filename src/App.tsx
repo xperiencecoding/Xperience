@@ -1,5 +1,5 @@
 import React, {lazy} from 'react';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import {HashRouter as Router, Routes, Route} from "react-router-dom"
 import ThemeProvider from "./components/generic/ThemeContext";
 import ScreenProvider from "./components/generic/ScreenContext";
 import AuthProvider from "./components/generic/AuthContext";
