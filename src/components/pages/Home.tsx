@@ -80,7 +80,7 @@ function Home(props: {}) {
                         // TODO: Insert button here
                     }
                 </ul>
-                <h6 className="bold">Click for more details.</h6>
+                <h6 className="bold">Click for more details. </h6>
 
                 {/* ... content ... */}
               </div>
