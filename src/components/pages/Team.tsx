@@ -743,7 +743,7 @@ function Team(props: {}) {
 
                             <div key="l">
                                 <div className="profile">
-                                    <img src={require("../../img/Pilnnnn.png")} />
+                                    <img src={require("../../img/PPP.jpg")} />
                                     <figcaption className="name oxanium bold">
                                     
                                         Palaniyappan Kannan
@@ -763,7 +763,7 @@ function Team(props: {}) {
 
                             <div key="m">
                                 <div className="profile">
-                                    <img src={require("../../img/Linjian.png")} />
+                                    <img src={require("../../img/dummy.jpg")} />
                                     <figcaption className="name oxanium bold">
                                     
                                         Linjian Ni
