@@ -51,6 +51,10 @@
         position: absolute;
         clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%);
       }
+
+      .text .details-text {
+        margin-top: 35px; /* Adjust this value as needed */
+      }
     }
 
     .bottom-half {
@@ -64,6 +68,10 @@
 
       ul {
         direction: rtl;
+      }
+
+      .text .details-text {
+        margin-top: 45px; /* Adjust this value as needed */
       }
     }
 
@@ -84,6 +92,19 @@
     .document {
       padding: 1rem;
 
+      .top-half,
+      .bottom-half {
+        flex-direction: column; // Change to column layout on smaller screens
+        height: auto; // Adjust height to auto for vertical stacking
+        margin: 1rem 0; // Adjust margin for better spacing
+        width: 100%; // Ensure full width
+
+        .text {
+          max-width: 100%;
+          padding: 1rem;
+        }
+      }
+
       .bottom-half {
         flex-direction: column; // Change to column layout on smaller screens
         height: auto; // Adjust height to auto for vertical stacking
@@ -92,6 +113,10 @@
         .text {
           max-width: 100%;
           padding: 1rem;
+          
+        }
+        ul {
+        right: 10px;
         }
         
         
@@ -113,9 +138,10 @@
         .h-100{
           height: 50%;
         }
-        h6,.h6{
-          
+        .text .details-text {
+          margin-top: -15px; /* Adjust this value as needed */
         }
+        
         img {
           object-fit: cover;
           width: 100%;

@@ -80,7 +80,9 @@ function Home(props: {}) {
                         // TODO: Insert button here
                     }
                 </ul>
-                <h6 className="bold">Click for more details. </h6>
+                <div className="details-text">
+                <h6 className="bold">Click for more details.</h6>
+                </div>
 
                 {/* ... content ... */}
               </div>
@@ -132,7 +134,11 @@ function Home(props: {}) {
                         // TODO: Insert button here
                     }
                 </ul>
+                
+                <div className="details-text">
                 <h6 className="bold">Click for more details.</h6>
+                </div>
+                
               </div>
             </motion.div>
           </div>
