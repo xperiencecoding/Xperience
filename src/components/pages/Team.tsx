@@ -743,7 +743,7 @@ function Team(props: {}) {
 
                             <div key="l">
                                 <div className="profile">
-                                    <img src={require("../../img/PPP.jpg")} />
+                                    <img src={require("../../img/Pilnnnn.png")} />
                                     <figcaption className="name oxanium bold">
                                     
                                         Palaniyappan Kannan
@@ -752,7 +752,7 @@ function Team(props: {}) {
                                             <a href="mailto:aaryan.singh@vhhscougars.org" target="_blank" rel="noopener noreferrer">
                                                 <FaEnvelope size={".7em"} />
                                             </a>
-                                            <a href="https://www.linkedin.com/in/aaryans4699/" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://www.linkedin.com/in/palaniyappan-kannan-86005930b/" target="_blank" rel="noopener noreferrer">
                                                 <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
@@ -763,7 +763,7 @@ function Team(props: {}) {
 
                             <div key="m">
                                 <div className="profile">
-                                    <img src={require("../../img/dummy.jpg")} />
+                                    <img src={require("../../img/Abraham.png")} />
                                     <figcaption className="name oxanium bold">
                                     
                                         Linjian Ni
@@ -772,7 +772,7 @@ function Team(props: {}) {
                                             <a href="mailto:aaryan.singh@vhhscougars.org" target="_blank" rel="noopener noreferrer">
                                                 <FaEnvelope size={".7em"} />
                                             </a>
-                                            <a href="https://www.linkedin.com/in/aaryans4699/" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://www.linkedin.com/in/linjian-ni-9643602a7/" target="_blank" rel="noopener noreferrer">
                                                 <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
@@ -792,7 +792,7 @@ function Team(props: {}) {
                                             <a href="mailto:aaryan.singh@vhhscougars.org" target="_blank" rel="noopener noreferrer">
                                                 <FaEnvelope size={".7em"} />
                                             </a>
-                                            <a href="https://www.linkedin.com/in/aaryans4699/" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://www.linkedin.com/in/aashini-kochar-44638b208/" target="_blank" rel="noopener noreferrer">
                                                 <FaLinkedinIn size={".7em"} />
                                             </a>
                                         </div>
