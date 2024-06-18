@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Anim } from "../../Animation";
 import { useTheme } from "../generic/ThemeContext";
 import { useNavigate } from "react-router-dom";
+import Button from "@mui/material/Button";
 
 function Coding() {
     const theme = useTheme();
@@ -49,20 +50,34 @@ function Coding() {
                                 {"<"}
                             </motion.div>
                         </div>
-                        <div className="list row-bc">
-                            <ul className="oxanium h3">
-                                <li>Weekday afternoons, location TBA</li>
-                                <li>12 sessions, rate TBA</li>
-                                <li>Python, JavaScript, and Java classes</li>
-                                <li>Taught by advanced VHHS CS students</li>
+                        <div className="list row-bc w-100" style={{ padding: "20px" }}>
+                            <ul className="oxanium h3" style={{ flex: 1 }}>
+                                <li>Weekdays from 1PM - 3PM at Libertyville High School</li>
+                                <li>Coding Language Specialties: Python, JavaScript, and Java classes.</li>
+                                <li>Previously, we have done 3D printing, Micro Bits, and Battle Bots.</li>
+                                <li>We have had 75 students.</li>
                             </ul>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5908.8370370839875!2d-87.949139!3d42.226871!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f9619efb8b969%3A0x43438e5e609847e1!2s145%20Lakeview%20Pkwy%2C%20Vernon%20Hills%2C%20IL%2060061!5e0!3m2!1sen!2sus!4v1656493321759!5m2!1sen!2sus"
-                                style={{ border: 0 }}
-                                allowFullScreen={false}
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                            />
+                        </div>
+                        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
+                            <Button
+                                variant="contained"
+                                onClick={() => navigate("/form?toggle=education")}
+
+                                sx={{
+                                    backgroundColor: '#424242', // Dark gray background
+                                    color: '#FFFFFF', // White text
+                                    border: '2px solid #424242', // Matching dark gray border
+                                    borderRadius: '5px',
+                                    padding: '10px 20px',
+                                    '&:hover': {
+                                        backgroundColor: '#616161', // Slightly lighter gray on hover
+                                        borderColor: '#616161', // Matching border color on hover
+                                        boxShadow: '0 0 10px rgba(255, 255, 255, 0.7)',
+                                    },
+                                }}
+                            >
+                                Sign up for notifications for upcoming camps!
+                            </Button>
                         </div>
                         <motion.div
                             tabIndex={0}

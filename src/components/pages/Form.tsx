@@ -4,7 +4,7 @@ import "../../scss/pages.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { Anim } from "../../Animation";
 import { useTheme } from "../generic/ThemeContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { styled } from "@mui/system";
 import Background from "../../img/form.jpg";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
@@ -16,6 +16,7 @@ import { createTheme, ThemeProvider } from "@mui/material";
 const Form: React.FC = () => {
     const theme = useTheme();
     const navigate = useNavigate();
+    const location = useLocation();
     const [alignment, setAlignment] = useState('consulting');
 
     const muiTheme = createTheme({
@@ -38,7 +39,14 @@ const Form: React.FC = () => {
 
     useEffect(() => {
         theme.setLoadState(-2);
-    }, [theme]);
+
+        // Read the query parameter
+        const params = new URLSearchParams(location.search);
+        const toggle = params.get('toggle');
+        if (toggle === 'education') {
+            setAlignment('coding');
+        }
+    }, [theme, location.search]);
 
     return (
         <div className="apex-test w-100 h-100 col-cc">
