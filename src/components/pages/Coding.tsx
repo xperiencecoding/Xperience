@@ -7,6 +7,7 @@ import { useTheme } from "../generic/ThemeContext";
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 
+
 function Coding() {
     const theme = useTheme();
     const navigate = useNavigate();
@@ -14,6 +15,14 @@ function Coding() {
     useEffect(() => {
         theme.setLoadState(-2);
     }, [theme]);
+
+    const advance = (url: string) => {
+        theme.setLoadState(-2);
+        setTimeout(() => {
+          navigate(url);
+          theme.setFullscreen(false);
+        }, 500);
+      };
 
     return (
         <div className="apex-coding w-100 h-100 col-cc">
@@ -61,7 +70,7 @@ function Coding() {
                         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
                             <Button
                                 variant="contained"
-                                onClick={() => navigate("/form?toggle=education")}
+                                onClick={() => advance("/form?toggle=education")}
 
                                 sx={{
                                     backgroundColor: '#424242', // Dark gray background

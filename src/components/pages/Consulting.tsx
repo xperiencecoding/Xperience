@@ -15,6 +15,14 @@ function Consulting() {
         theme.setLoadState(-2);
     }, [theme]);
 
+    const advance = (url: string) => {
+        theme.setLoadState(-2);
+        setTimeout(() => {
+          navigate(url);
+          theme.setFullscreen(false);
+        }, 500);
+      };
+
     return (
         <div className="apex-coding w-100 h-100 col-cc">
             <AnimatePresence>
@@ -82,7 +90,7 @@ function Consulting() {
                         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
                             <Button
                                 variant="contained"
-                                onClick={() => navigate("/form")}
+                                onClick={() => advance("/form")}
                                 sx={{
                                     backgroundColor: '#424242', // Dark gray background
                                     color: '#FFFFFF', // White text
