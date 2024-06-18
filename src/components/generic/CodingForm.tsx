@@ -84,6 +84,17 @@ function CodingForm() {
                     console.log(error.text);
                 }
             );
+
+            emailjs
+            .send("service_3qcfjxw", "template_ro0p97w", templateParams, "35zn_rtgX1-qsLE90")
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
     
         e.currentTarget.reset(); // Reset the form after submission
     }

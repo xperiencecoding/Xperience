@@ -37,7 +37,7 @@ function Consulting(props: {}) {
                     </motion.div>
                 </div>
                 <div className="oxanium h6 explanation" style={{marginTop: "3rem"}}>
-                    Our CS students at Vernon Hills High School are future leaders, with vast skillsets, powerful perspectives, and unique solutions. Let them help you with your next technological endeavor.
+                Our computer science students at Vernon Hills High School are the leaders of tomorrow. They possess diverse skill sets, insightful perspectives, and innovative solutions. Let them assist you with your next technological project.
                     <br/><br/>
                     Click <a href="https://docs.google.com/document/d/1wJh8QC1-SfL-h3IirxDdf04O9V78izsEMKEAxSdrOXw/edit" target={"_blank"}>here</a> to see student work!
                 </div>
@@ -48,7 +48,7 @@ function Consulting(props: {}) {
                         </div>
                         <ul className="oxanium h6">
                             <li>
-                                If you have a request for our students, email us with the following:
+                                If you have a request for our students, <a href="mailto:xperienced128@gmail.com" target="_blank" rel="noopener noreferrer"> email </a> us with the following:
                             </li>
                             <li>
                                 <strong>Requirements</strong>: What is your project goal? What deadlines do you have?
