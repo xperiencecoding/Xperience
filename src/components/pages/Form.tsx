@@ -12,6 +12,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 import CodingForm from "../generic/CodingForm";
 import ConsultingForm from "../generic/ConsultingForm";
 import { createTheme, ThemeProvider } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 const Form: React.FC = () => {
     const theme = useTheme();
@@ -65,9 +66,11 @@ const Form: React.FC = () => {
                                 backgroundImage: `url(${Background})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
+                                fontSize: "4rem ",
+                                textAlign: "center"
                             }}
                         >
-                            Form
+                            Sign up to contact us!
                             <motion.div
                                 className="back"
                                 tabIndex={0}
@@ -80,8 +83,10 @@ const Form: React.FC = () => {
                             >
                                 
                             </motion.div>
+                            
                         </div>
                         <ThemeProvider theme={muiTheme}>
+                        
                             <div>
                                 <ToggleButtonGroup
                                     value={alignment}

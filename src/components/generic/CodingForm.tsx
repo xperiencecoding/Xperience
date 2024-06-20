@@ -67,11 +67,12 @@ function CodingForm() {
             name: formData.get('name') || '', // Fallback to empty string if null
             email: formData.get('email') || '',
             grade: formData.get('grade') || '',
-            beginner: (form.querySelector('input[name="beginner"]') as HTMLInputElement).checked ? 'Yes' : 'No',
-            intermediate: (form.querySelector('input[name="intermediate"]') as HTMLInputElement).checked ? 'Yes' : 'No',
-            robotics: (form.querySelector('input[name="robotics"]') as HTMLInputElement).checked ? 'Yes' : 'No',
-            web: (form.querySelector('input[name="web"]') as HTMLInputElement).checked ? 'Yes' : 'No',
-            other: formData.get('other') || ''
+            message: formData.get('other') || ''
+            // beginner: (form.querySelector('input[name="beginner"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            // intermediate: (form.querySelector('input[name="intermediate"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            // robotics: (form.querySelector('input[name="robotics"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            // web: (form.querySelector('input[name="web"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            
         };
     
         emailjs
@@ -107,86 +108,109 @@ function CodingForm() {
     >
         <form className="coding-form" onSubmit={sendEmail}>
     <Stack
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        spacing={2}
-        divider={<Divider orientation="vertical" flexItem />}
-    >
-        <TextEntryField
-            id="name"
-            style={{ width: "200px" }}
-            size="small"
-            type="text"
-            label="Name"
-            variant="outlined"
-            name="name"
-            InputLabelProps={{ style: { color: '#fff', borderColor: 'white' } }}
-        />
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}
+                divider={<Divider orientation="vertical" flexItem />}
+            >
 
-        <TextEntryField
-            id="email"
-            style={{ width: "200px" }}
-            size="small"
-            type="text"
-            label="Email"
-            name="email"
-            variant="outlined"
-            InputLabelProps={{ style: { color: '#fff', borderColor: 'white' } }}
-        />
+                <TextEntryField
+                    style={{ width: "200px" }}
+                    size="small"
+                    type="text"
+                    label="Name"
+                    name = "name"
+                    variant="outlined"
+                    InputLabelProps={{
+                        style: { color: '#fff', borderColor: 'white' },
+                    }}
+                />
 
-        <TextEntryField
-            id="grade"
-            style={{ width: "200px" }}
-            size="small"
-            type="text"
-            name="grade"
-            label="Grade Level"
-            variant="outlined"
-            InputLabelProps={{ style: { color: '#fff', borderColor: 'white' } }}
-        />
-    </Stack>
-    <br />
-    <Divider variant="middle" style={{ background: 'white', borderBottomWidth: 1, marginLeft: '4%', marginRight: '4%' }} />
+                <TextEntryField
+                    style={{ width: "200px" }}
+                    size="small"
+                    type="text"
+                    name = "email"
+                    label="Email"
+                    variant="outlined"
+                    InputLabelProps={{
+                        style: { color: '#fff', borderColor: 'white' },
+                    }}
+                />
 
-    <Stack
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        spacing={0}
-        divider={<Divider orientation="vertical" flexItem />}
-    >
-        <FormControlLabel control={<Checkbox style={{ color: "#FFFFFF" }} />} label="Beginner coding?" name="beginner" />
-        <FormControlLabel control={<Checkbox style={{ color: "#FFFFFF" }} />} label="Intermediate coding?" name="intermediate" />
-        <FormControlLabel control={<Checkbox style={{ color: "#FFFFFF" }} />} label="Robotics?" name="robotics" />
-    </Stack>
+                <TextEntryField
+                    style={{ width: "200px" }}
+                    size="small"
+                    type="text"
+                    label="Grade Level"
+                    name = "companyname"
+                    variant="outlined"
+                    InputLabelProps={{
+                        style: { color: '#fff', borderColor: 'white' },
+                    }}
+                />
+            </Stack>
 
-    <Stack
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        spacing={0}
-        divider={<Divider orientation="vertical" flexItem />}
-    >
-        <FormControlLabel control={<Checkbox style={{ color: "#FFFFFF" }} />} label="Web development?" name="web" />
-        <FormControlLabel control={<Checkbox style={{ color: "#FFFFFF" }} checked={checked} onChange={handleChange} />} label="" />
+            <br />
+            <Divider variant="middle" style={{ background: 'white', borderBottomWidth: 1, marginLeft: '4%', marginRight: '4%' }} />
 
-        <TextEntryField
-            style={{ width: "200px", }}
-            type="text"
-            size="small"
-            variant="outlined"
-            label="Other: "
-            name="other"
-            InputLabelProps={{ style: { color: '#fff', borderColor: 'white' } }}
-        />
-    </Stack>
-    <br />
-    <Box textAlign='center'>
-        <Button variant='contained' type="submit">
-            Submit
-        </Button>
-    </Box>
+
+            {/* <Stack
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={1}
+
+            >
+                <FormControlLabel control={<Checkbox style={{
+                    color: "#FFFFFF",
+                }} />} label="Sponsor Lcoal Events?" name = "sponsor"/>
+                <FormControlLabel control={<Checkbox style={{
+                    color: "#FFFFFF",
+                }} />} label="Need interns?" name = "interns"/>
+                <FormControlLabel control={<Checkbox style={{
+                    color: "#FFFFFF",
+                }} />} label="Need a project completed?" />
+            </Stack> */}
+            <br/>
+            
+            <Stack
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={0}
+                
+            >
+                {/* <FormControlLabel control={<Checkbox style={{
+                    color: "#FFFFFF",
+                }} />} label="Need IT support?" name = "IT"/>
+                <FormControlLabel control={<Checkbox style={{
+                    color: "#FFFFFF"
+                }} checked={checked} onChange={handleChange} />} label="" /> */}
+                <TextEntryField
+                    style={{ width: "500px", }}
+                    size="medium"
+                    type="text"
+                    variant="outlined"
+                    // disabled={!checked}
+                    label= "Message "
+                    InputLabelProps={{
+                        style: { color: '#fff', borderColor: 'white' },
+                    }}
+                    name = "other"
+                    multiline
+                    rows={2}
+                    
+                />
+            </Stack>
+            <br />
+            <Box textAlign='center'>
+                <Button variant='contained' type = "submit">
+                    Submit
+                </Button>
+            </Box>
+
 </form>
 
     </motion.div >

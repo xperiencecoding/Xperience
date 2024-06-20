@@ -68,10 +68,11 @@ function ConsultingForm() {
             name: formData.get('name') || '', // Fallback to empty string if null
             email: formData.get('email') || '',
             company: formData.get('companyname') || '',
-            sponsor: (form.querySelector('input[name="sponsor"]') as HTMLInputElement).checked ? 'Yes' : 'No',
-            intern: (form.querySelector('input[name="interns"]') as HTMLInputElement).checked ? 'Yes' : 'No',
-            IT: (form.querySelector('input[name="IT"]') as HTMLInputElement).checked ? 'Yes' : 'No',
-            other: formData.get('other') || ''
+            message: formData.get('other') || ''
+            // sponsor: (form.querySelector('input[name="sponsor"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            // intern: (form.querySelector('input[name="interns"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            // IT: (form.querySelector('input[name="IT"]') as HTMLInputElement).checked ? 'Yes' : 'No',
+            
         };
     
         emailjs
@@ -156,7 +157,7 @@ function ConsultingForm() {
             <Divider variant="middle" style={{ background: 'white', borderBottomWidth: 1, marginLeft: '4%', marginRight: '4%' }} />
 
 
-            <Stack
+            {/* <Stack
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
@@ -172,32 +173,36 @@ function ConsultingForm() {
                 <FormControlLabel control={<Checkbox style={{
                     color: "#FFFFFF",
                 }} />} label="Need a project completed?" />
-            </Stack>
-
+            </Stack> */}
+            <br/>
+            
             <Stack
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
                 spacing={0}
-
+                
             >
-                <FormControlLabel control={<Checkbox style={{
+                {/* <FormControlLabel control={<Checkbox style={{
                     color: "#FFFFFF",
                 }} />} label="Need IT support?" name = "IT"/>
                 <FormControlLabel control={<Checkbox style={{
                     color: "#FFFFFF"
-                }} checked={checked} onChange={handleChange} />} label="" />
+                }} checked={checked} onChange={handleChange} />} label="" /> */}
                 <TextEntryField
-                    style={{ width: "200px", }}
-                    size="small"
+                    style={{ width: "500px", }}
+                    size="medium"
                     type="text"
                     variant="outlined"
                     // disabled={!checked}
-                    label="Other: "
+                    label= "Message "
                     InputLabelProps={{
                         style: { color: '#fff', borderColor: 'white' },
                     }}
                     name = "other"
+                    multiline
+                    rows={2}
+                    
                 />
             </Stack>
             <br />

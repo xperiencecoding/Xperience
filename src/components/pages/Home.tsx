@@ -48,7 +48,7 @@ function Home(props: {}) {
   }, []);
 
   return (
-    <div className="apex-home w-100 h-100 col-cc">
+    <div className="apex-home w-100 h-100 col-cc" >
       {theme.loadState >= 0 && (
         <Loading progress={theme.loadState} callback={() => {
           theme.setLoadState(-1);
@@ -70,18 +70,18 @@ function Home(props: {}) {
             >
               <div className="text col-ss h-100">
                 <h1 className="oxanium bold">
-                    Education
+                  Education
                 </h1>
                 <ul className="h6 oxanium">
-                    <li>Specialized workshops taught by VHHS students</li>
-                    <li>3:1 student-teacher ratio</li>
-                    <li>12 sessions, rate TBA</li>
-                    {
-                        // TODO: Insert button here
-                    }
+                  <li>Specialized workshops taught by VHHS students</li>
+                  <li>3:1 student-teacher ratio</li>
+                  <li>12 sessions, rate TBA</li>
+                  {
+                    // TODO: Insert button here
+                  }
                 </ul>
                 <div className="details-text">
-                <h6 className="bold">Click for more details.</h6>
+                  <h6 className="bold">Click for more details.</h6>
                 </div>
 
                 {/* ... content ... */}
@@ -124,21 +124,21 @@ function Home(props: {}) {
               <div className="text col-se h-100">
                 {/* ... content ... */}
                 <h1 className="oxanium bold">
-                                Consulting
+                  Consulting
                 </h1>
                 <ul className="h6 oxanium">
-                    <li>Provide local businesses with technology solutions</li>
-                    <li>For eager students looking for meaningful work</li>
-                    <li>Around 1 project per year, per student</li>
-                    {
-                        // TODO: Insert button here
-                    }
+                  <li>Provide local businesses with technology solutions</li>
+                  <li>For eager students looking for meaningful work</li>
+                  <li>Around 1 project per year, per student</li>
+                  {
+                    // TODO: Insert button here
+                  }
                 </ul>
-                
+
                 <div className="details-text">
-                <h6 className="bold">Click for more details.</h6>
+                  <h6 className="bold">Click for more details.</h6>
                 </div>
-                
+
               </div>
             </motion.div>
           </div>

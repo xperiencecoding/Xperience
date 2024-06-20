@@ -15,14 +15,6 @@ function Consulting() {
         theme.setLoadState(-2);
     }, [theme]);
 
-    const advance = (url: string) => {
-        theme.setLoadState(-2);
-        setTimeout(() => {
-          navigate(url);
-          theme.setFullscreen(false);
-        }, 500);
-      };
-
     return (
         <div className="apex-coding w-100 h-100 col-cc">
             <AnimatePresence>
@@ -57,40 +49,32 @@ function Consulting() {
                                 {"<"}
                             </motion.div>
                         </div>
-                        <div className="oxanium h6 explanation" style={{ marginTop: "3rem", padding: "0 20px" }}>
-                            Our CS students at Vernon Hills High School are future leaders, with vast skillsets, powerful perspectives, and unique solutions. Let them help you with your next technological endeavor.
-                            <br /><br />
-                            Click <a href="https://docs.google.com/document/d/1wJh8QC1-SfL-h3IirxDdf04O9V78izsEMKEAxSdrOXw/edit" target={"_blank"}>here</a> to see student work!
+                        <div className="oxanium h6" style={{ textAlign: "center", lineHeight: "1.75", padding: "0 60px", fontSize: "1.4rem" }}>
+                        <br></br>
+
+                            XPerience offers these solutions to help businesses like yours! Our CS students at Vernon Hills High School are future leaders, with vast skillsets, powerful perspectives, and unique solutions. Let them help you with your next technological endeavor.
+                            <br></br>
+                            <br></br>
+                            <ul style={{ listStyleType: "disc", textAlign: "left", paddingLeft: "20px" }}>
+                                <li>Customized safety solutions for organizations</li>
+                                <li>Fire safety apps tailored for educational purposes</li>
+                                <li>Engaging videos showcasing organizational environments</li>
+                                <li>Workplace safety apps for real-time incident reporting</li>
+                                <li>Custom tech solutions: software applications, mobile apps, web platforms, interactive videos</li>
+                            </ul>
                         </div>
-                        <div className="list row-bs" style={{ marginTop: "2rem", width: "100%", maxWidth: "1200px", padding: "0 20px" }}>
+
+                        
+                        <div className="list row-bs" style={{ marginTop: "2rem", width: "100%", maxWidth: "1200px", padding: "0 40px" }}>
                             <div className="col-cs w-50" style={{ flex: 1, marginRight: "10px" }}>
-                                <div className="oxanium h3">
-                                    Local Businesses
-                                </div>
-                                <ul className="oxanium h6">
-                                    <li>
-                                        If you have a request for our students, email us with the following:
-                                    </li>
-                                    <li>
-                                        <strong>Requirements</strong>: What is your project goal? What deadlines do you have?
-                                    </li>
-                                    <li>
-                                        <strong>Compensation</strong>: How will our students be rewarded?
-                                    </li>
-                                    <li>
-                                        <strong>Contact</strong>: How will our students contact you?
-                                    </li>
-                                    <li>
-                                        <strong>Prototype</strong> (optional): Do you have a preexisting product that we could modify instead?
-                                    </li>
-                                </ul>
+                                
+                                
                             </div>
-                            
                         </div>
                         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
                             <Button
                                 variant="contained"
-                                onClick={() => advance("/form")}
+                                onClick={() => navigate("/form")}
                                 sx={{
                                     backgroundColor: '#424242', // Dark gray background
                                     color: '#FFFFFF', // White text
