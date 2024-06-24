@@ -16,6 +16,15 @@ function Consulting() {
         theme.setLoadState(-2);
     }, [theme]);
 
+    const shortParagraph = "XPerience offers solutions to help businesses like yours! Let our CS students at Vernon Hills High School help you with your next technological endeavor.";
+    const shortBulletPoints = [
+        "Customized safety solutions",
+        "Fire safety apps for education",
+        "Engaging organizational videos",
+        "Real-time incident reporting apps",
+        "Custom tech solutions"
+    ];
+
     return (
         <div className="apex-coding w-100 h-100 col-cc">
             <AnimatePresence>
@@ -50,21 +59,33 @@ function Consulting() {
                                 {"<"}
                             </motion.div>
                         </div>
-                        <div className="oxanium h6" style={{ textAlign: "center", lineHeight: "1.75", padding: "0 60px", fontSize: "1.4rem", marginBottom: "20px" }}>
-                            XPerience offers these solutions to help businesses like yours! Our CS students at Vernon Hills High School are future leaders, with vast skillsets, powerful perspectives, and unique solutions. Let them help you with your next technological endeavor.
+                        <div className="description-container">
+                            <div className="oxanium h6 desktop-paragraph" style={{ textAlign: "center", lineHeight: "1.75", padding: "0 60px", fontSize: "1.4rem", marginBottom: "20px" }}>
+                                XPerience offers these solutions to help businesses like yours! Our CS students at Vernon Hills High School are future leaders, with vast skillsets, powerful perspectives, and unique solutions. Let them help you with your next technological endeavor.
+                            </div>
+                            <div className="oxanium h6 mobile-paragraph" style={{ textAlign: "center", lineHeight: "1.75", padding: "0 20px", fontSize: "1.2rem", marginBottom: "10px" }}>
+                                {shortParagraph}
+                            </div>
                         </div>
-                        <div className="row" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", padding: "0 60px" }}>
-                            <div className="bullet-points-container oxanium h6" style={{ lineHeight: "1.75", fontSize: "1.4rem", flex: 1 }}>
+                        <div className="row bullet-points-container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", padding: "0 60px" }}>
+                            <div className="bullet-points desktop-bullet-points oxanium h6" style={{ lineHeight: "1.75", fontSize: "1.4rem", flex: 1 }}>
                                 <ul style={{ listStyleType: "disc", textAlign: "left", paddingLeft: "20px" }}>
-                                    <li>Customized safety solutions</li>
-                                    <li>Fire safety apps</li>
-                                    <li>Engaging videos</li>
-                                    <li>Workplace safety apps</li>
-                                    <li>Custom tech solutions</li>
+                                    <li>Customized safety solutions for organizations</li>
+                                    <li>Fire safety apps tailored for educational purposes</li>
+                                    <li>Engaging videos showcasing organizational environments</li>
+                                    <li>Workplace safety apps for real-time incident reporting</li>
+                                    <li>Custom tech solutions: software applications, mobile apps, web platforms, interactive videos</li>
                                 </ul>
                             </div>
-                            <div className="google-doc-container" style={{ flex: 1, marginLeft: "20px" }}>
-                                <div className="google-doc-embed">
+                            <div className="bullet-points mobile-bullet-points oxanium h6" style={{ lineHeight: "1.75", fontSize: "1.2rem", flex: 1, paddingLeft: "20px" }}>
+                                <ul style={{ listStyleType: "disc", textAlign: "left" }}>
+                                    {shortBulletPoints.map((point, index) => (
+                                        <li key={index}>{point}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="google-doc-container">
+                                <div className="google-doc-embed desktop-google-doc">
                                     <iframe
                                         className="google-doc-iframe"
                                         src="https://docs.google.com/document/d/1wJh8QC1-SfL-h3IirxDdf04O9V78izsEMKEAxSdrOXw/preview"
