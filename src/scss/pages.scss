@@ -1,3 +1,161 @@
+.apex-home {
+  color: white;
+  min-height: 100vh;
+  
+  .document {
+    padding: 8rem 0;
+
+    .top-half,
+    .bottom-half {
+      cursor: pointer;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.08);
+      height: 24rem;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: row; // Default layout for larger screens
+
+      .text {
+        padding: 2rem;
+        flex: 1; // Take up equal space
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+
+        li {
+          margin: 1rem 0;
+        }
+      }
+
+      img {
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .top-half {
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      margin-right: 4rem;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        left: 10vw;
+        position: absolute;
+        clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .text .details-text {
+        margin-top: 35px; /* Adjust this value as needed */
+      }
+    }
+
+    .bottom-half {
+      border-bottom-right-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      margin-left: 4rem;
+
+      img {
+        clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0 100%);
+      }
+
+      ul {
+        direction: rtl;
+      }
+
+      .text .details-text {
+        margin-top: 45px; /* Adjust this value as needed */
+      }
+    }
+
+    .fade-image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      .fade-img {
+        position: relative;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .document {
+      padding: 1rem;
+      margin-top: 70px;
+
+      .top-half,
+      .bottom-half {
+        flex-direction: column; // Change to column layout on smaller screens
+        height: auto; // Adjust height to auto for vertical stacking
+        margin: 1rem 0; // Adjust margin for better spacing
+        width: 100%; // Ensure full width
+
+        .text {
+          max-width: 100%;
+          padding: 1rem;
+        }
+      }
+
+      .bottom-half {
+        flex-direction: column; // Change to column layout on smaller screens
+        height: auto; // Adjust height to auto for vertical stacking
+        margin: 1rem 0; // Adjust margin for better spacing
+
+        .text {
+          max-width: 100%;
+          padding: 1rem;
+          
+        }
+        ul {
+        right: 10px;
+        }
+        
+        
+        img {
+          width: 100%; // Full width for images
+          height: auto; // Adjust height to auto
+          clip-path: none; // Remove clip-path for simplicity
+          // position: absolute;
+        }
+        
+      }
+      .top-half {
+        flex-direction: column;
+        height: 35rem;
+        width:100%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        // margin-right: 4rem;
+        .h-100{
+          height: 50%;
+        }
+        .text .details-text {
+          margin-top: -15px; /* Adjust this value as needed */
+        }
+        
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          left: 0vw;
+          position: absolute;
+          clip-path: none;
+        }
+      }
+    }
+  }
+}
+
 .apex-coding,
 .apex-consulting {
   color: white;
@@ -49,80 +207,306 @@
     }
 
     iframe {
-      width: 100%;
-      height: 500px;
+      width: 100%; /* Adjusted for responsiveness */
+      aspect-ratio: 3/2;
+      border: none; /* Ensure no border */
+      margin-top: 1rem; /* Added margin top for spacing */
     }
 
-    .google-doc-iframe {
-      width: 100%;
-      height: 500px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    .click-to {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
     }
 
-    .google-doc-button,
-    .google-doc-iframe {
-      margin-top: 20px;
+    img {
+      width: 100%; /* Adjusted for responsiveness */
+      max-width: 18rem; /* Added max-width to limit size on larger screens */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 2rem;
+      margin-top: 1rem; /* Added margin top for spacing */
+    }
+
+    .swiper-button-prev {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
     }
   }
 
-  .description-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 60px;
+  @media (max-width: 768px) {
+    .document {
+      padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .h0 {
+      font-size: 2rem; /* Decrease font size on smaller screens */
+    }
+
+    .list {
+      flex-direction: column; /* Stack list items vertically on smaller screens */
+    }
+
+    iframe {
+      width: 100%; /* Make iframe full width on smaller screens */
+    }
+
+    img {
+      width: 100%; /* Make images full width on smaller screens */
+      max-width: none; /* Remove max-width constraint */
+    }
+  }
+}
+
+
+.apex-users {
+  color: white;
+  min-height: 100vh;
+
+  padding: 8rem 0 2rem;
+
+  .document {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 2rem;
+    overflow: hidden;
+
+    > *:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    .explanation {
+      padding: 0 2rem;
+    }
+
+    .h0 {
+      letter-spacing: 1px;
+      margin: 0;
+      text-shadow: 0 0.25rem 0.5rem black;
+      cursor: pointer;
+      background-color: rgba(255, 255, 55, 0.08);
+
+      padding: 2rem;
+
+      .back {
+        position: absolute;
+        left: 2rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+      }
+    }
+
+    .list {
+      padding: 0 2rem;
+    }
+
+    ul {
+      margin: 0;
+      li {
+        margin: 1rem 0;
+      }
+    }
+
+    iframe {
+      width: 35%;
+      aspect-ratio: 3/2;
+    }
+
+    .click-to {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+    .profile {
+      text-align: center;
+      width: 18rem; /* Adjust as needed */
+      margin: 0 auto; /* Horizontally center the profile */
+      border-radius: 50%;
+    }
+    img {
+      width: 13rem; /* Team Pics size */
+      height: 13rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .name {
+      position: relative;
+      font-size: 30px;
+      width: 18rem;
+      /* text-align: justify;  */
+    }
+    .caption {
+      position: relative;
+      width: 18rem;
+      font-size: 15px;
+      /* text-align: justify; */
+    }
+    .user-info {  /* New container element */
+      display: flex;
+      align-items: center;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #00a0c6;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.apex-test {
+  color: white;
+  min-height: 100vh;
+  padding: 8rem 1rem 2rem; // Changed to 1rem to add padding on smaller screens
+
+  .document {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 100%; // Changed to 100% for responsive width
+    max-width: 48rem; // Added max-width for larger screens
+    > *:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    .explanation {
+      padding: 0 2rem;
+    }
+
+    .h0 {
+      letter-spacing: 1px;
+      margin: 0;
+      text-shadow: 0 0.25rem 0.5rem black;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+
+      .back {
+        position: absolute;
+        left: 2rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+      }
+    }
+
+    .list {
+      padding: 0 2rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      li {
+        margin: 1rem 0;
+      }
+    }
+
+    iframe {
+      width: 100%; // Changed to 100% for responsive width
+      aspect-ratio: 3/2;
+    }
+
+    .click-to {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    .profile {
+      text-align: center;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+    }
+
+    img {
+      width: 100%; // Changed to 100% for responsive width
+      max-width: 18rem; // Added max-width for larger screens
+      height: auto; // Changed to auto for responsive height
+      border-radius: 50%;
+    }
+
+    .name {
+      position: relative;
+      font-size: 2rem; // Changed to a more responsive unit
+      width: 100%; // Changed to 100% for responsive width
+      max-width: 18rem; // Added max-width for larger screens
+      text-align: justify;
+    }
+
+    .caption {
+      position: relative;
+      width: 100%; // Changed to 100% for responsive width
+      max-width: 18rem; // Added max-width for larger screens
+      text-align: justify;
+    }
+
+    .test {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .test2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    input:-webkit-autofill {
+      -webkit-text-fill-color: white !important;
+    }
+  }
+}
+
+// Media Queries for smaller screens
+@media (max-width: 768px) {
+  .apex-test {
+    padding: 4rem 1rem 1rem; // Adjusted padding for smaller screens
   }
 
-  .bullet-points-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+  .document {
+    padding: 1rem;
+    border-radius: 1rem; // Adjusted border-radius for smaller screens
   }
 
-  .google-doc-container {
-    flex: 1;
-    margin-left: 20px;
-  }
-
-  .google-doc-embed {
-    margin-top: 20px;
-  }
-
-  .google-doc-button {
-    margin-top: 20px;
+  .h0 {
+    padding: 1rem;
   }
 
   .click-to {
-    padding: 20px;
+    padding: 1rem;
   }
+  .google-doc-container {
+    .google-doc-embed {
+        display: block; // Default display for larger screens
 
-  .desktop-paragraph,
-  .desktop-bullet-points,
-  .desktop-google-doc {
-    display: block;
-  }
-
-  .mobile-paragraph,
-  .mobile-bullet-points {
-    display: none;
-  }
-
-  @media screen and (max-width: 768px) {
-    .desktop-paragraph,
-    .desktop-bullet-points,
-    .desktop-google-doc {
-      display: none;
+        @media (max-width: 768px) {
+            display: none; // Hide the Google Doc embed on screens smaller than 768px
+        }
     }
 
-    .mobile-paragraph,
-    .mobile-bullet-points {
-      display: block;
-    }
+    .google-doc-button {
+        display: block; // Ensure the button is always displayed
 
-    .description-container,
-    .bullet-points-container {
-      padding: 0 20px;
+        @media (max-width: 768px) {
+            margin-top: 0; // Adjust margin or any other styling needed for smaller screens
+        }
     }
-  }
+}
 }
