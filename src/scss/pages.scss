@@ -492,5 +492,22 @@
   .click-to {
     padding: 1rem;
   }
+  .google-doc-container {
+    .google-doc-embed {
+        display: block; // Default display for larger screens
+
+        @media (max-width: 768px) {
+            display: none; // Hide the Google Doc embed on screens smaller than 768px
+        }
+    }
+
+    .google-doc-button {
+        display: block; // Ensure the button is always displayed
+
+        @media (max-width: 768px) {
+            margin-top: 0; // Adjust margin or any other styling needed for smaller screens
+        }
+    }
+}
 }
 

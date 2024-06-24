@@ -53,8 +53,8 @@ function Consulting() {
                         <div className="oxanium h6" style={{ textAlign: "center", lineHeight: "1.75", padding: "0 60px", fontSize: "1.4rem", marginBottom: "20px" }}>
                             XPerience offers these solutions to help businesses like yours! Our CS students at Vernon Hills High School are future leaders, with vast skillsets, powerful perspectives, and unique solutions. Let them help you with your next technological endeavor.
                         </div>
-                        <div className="row" style={{ display: "flex", justifyContent: "center", alignItems: "flex-start", padding: "0 60px" }}>
-                            <div className="oxanium h6" style={{ lineHeight: "1.75", fontSize: "1.4rem", flex: 1 }}>
+                        <div className="row" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", padding: "0 60px" }}>
+                            <div className="bullet-points-container oxanium h6" style={{ lineHeight: "1.75", fontSize: "1.4rem", flex: 1 }}>
                                 <ul style={{ listStyleType: "disc", textAlign: "left", paddingLeft: "20px" }}>
                                     <li>Customized safety solutions for organizations</li>
                                     <li>Fire safety apps tailored for educational purposes</li>
@@ -63,14 +63,37 @@ function Consulting() {
                                     <li>Custom tech solutions: software applications, mobile apps, web platforms, interactive videos</li>
                                 </ul>
                             </div>
-                            <div style={{ flex: 1, marginLeft: "20px" }}>
-                                <iframe
-                                    src="https://docs.google.com/document/d/1wJh8QC1-SfL-h3IirxDdf04O9V78izsEMKEAxSdrOXw/preview"
-                                    width="100%"
-                                    height="500"
-                                    style={{ border: "1px solid #ccc", borderRadius: "5px" }}
-                                    allowFullScreen
-                                ></iframe>
+                            <div className="google-doc-container" style={{ flex: 1, marginLeft: "20px" }}>
+                                <div className="google-doc-embed">
+                                    <iframe
+                                        className="google-doc-iframe"
+                                        src="https://docs.google.com/document/d/1wJh8QC1-SfL-h3IirxDdf04O9V78izsEMKEAxSdrOXw/preview"
+                                        width="100%"
+                                        height="500"
+                                        style={{ border: "1px solid #ccc", borderRadius: "5px" }}
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                                <Button
+                                    className="google-doc-button"
+                                    variant="contained"
+                                    onClick={() => window.open("https://docs.google.com/document/d/1wJh8QC1-SfL-h3IirxDdf04O9V78izsEMKEAxSdrOXw/edit", "_blank")}
+                                    sx={{
+                                        backgroundColor: '#424242', // Dark gray background
+                                        color: '#FFFFFF', // White text
+                                        border: '2px solid #424242', // Matching dark gray border
+                                        borderRadius: '5px',
+                                        padding: '10px 20px',
+                                        marginTop: '20px', // Added margin to separate the button from the iframe
+                                        '&:hover': {
+                                            backgroundColor: '#616161', // Slightly lighter gray on hover
+                                            borderColor: '#616161', // Matching border color on hover
+                                            boxShadow: '0 0 10px rgba(255, 255, 255, 0.7)',
+                                        },
+                                    }}
+                                >
+                                    View Google Doc
+                                </Button>
                             </div>
                         </div>
                         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
