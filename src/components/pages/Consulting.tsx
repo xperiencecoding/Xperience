@@ -56,11 +56,11 @@ function Consulting() {
                         <div className="row" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", padding: "0 60px" }}>
                             <div className="bullet-points-container oxanium h6" style={{ lineHeight: "1.75", fontSize: "1.4rem", flex: 1 }}>
                                 <ul style={{ listStyleType: "disc", textAlign: "left", paddingLeft: "20px" }}>
-                                    <li>Customized safety solutions for organizations</li>
-                                    <li>Fire safety apps tailored for educational purposes</li>
-                                    <li>Engaging videos showcasing organizational environments</li>
-                                    <li>Workplace safety apps for real-time incident reporting</li>
-                                    <li>Custom tech solutions: software applications, mobile apps, web platforms, interactive videos</li>
+                                    <li>Customized safety solutions</li>
+                                    <li>Fire safety apps</li>
+                                    <li>Engaging videos</li>
+                                    <li>Workplace safety apps</li>
+                                    <li>Custom tech solutions</li>
                                 </ul>
                             </div>
                             <div className="google-doc-container" style={{ flex: 1, marginLeft: "20px" }}>
