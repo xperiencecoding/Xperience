@@ -478,6 +478,7 @@
 @media (max-width: 768px) {
   .apex-coding, .apex-consulting {
       padding: 2rem 0 1rem;
+      margin-top: 5rem;
 
       .document {
           padding: 1rem;
@@ -502,6 +503,7 @@
                   display: flex;
                   justify-content: center;
                   width: 100%;
+                  margin-top: -1.5rem;
 
                   .card-container {
                       display: flex;
@@ -524,20 +526,28 @@
                   }
               }
 
-              .google-doc-container {
-                  .google-doc-embed {
-                      display: none;
-                  }
-
-                  .google-doc-button {
-                      margin-top: 0.5rem;
-                  }
-              }
-
-              .click-to {
-                  padding: 1rem;
-              }
+              
           }
+          .google-doc-container {
+            align-self: center;
+            
+            .google-doc-embed {
+                display: none;
+            }
+
+            .google-doc-button {
+              
+                margin-top: 5rem;
+                margin-right: 0.5rem;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        
+
+        .click-to {
+            padding: 1rem;
+        }
       }
   }
 }

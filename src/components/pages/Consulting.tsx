@@ -97,6 +97,7 @@ function Consulting() {
                                         ></iframe>
                                     </div>
                                 )}
+                                <div className="google-doc-button" style={{ display: 'flex', justifyContent: 'flex-end', marginTop:'-10px', alignItems: 'center' }}>
                                 <Button
                                     className="google-doc-button"
                                     variant="contained"
@@ -117,6 +118,7 @@ function Consulting() {
                                 >
                                     View Google Doc
                                 </Button>
+                                </div>
                             </div>
                         </div>
                         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '20px' }}>
